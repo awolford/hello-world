@@ -23,7 +23,7 @@ Then(/^I click Order above Philly Cheese Steak Pizza$/) do
 end
 
 Then(/^I click No, Add To Order Now$/) do
-    find(:xpath, '//*[@id="configureSpecialtyPizza"]/div/button[2]').click
+    find(:css, '#configureSpecialtyPizza > div > button.btn.btn--large.js-isNew').click
 end
 
 Then(/^I click Order above Deluxe Feast$/) do
