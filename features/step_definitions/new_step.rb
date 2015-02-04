@@ -15,11 +15,11 @@ Then(/^I fill out my home address$/)do
 end
 
 Then(/^I click Specialty Pizza$/) do
-    find(:xpath, '//*[@id="entreesPage"]/div[5]/a/div[2]/h2').click
+    find(:css, 'a.qa-Specialty.grid').click
 end
 
 Then(/^I click Order above Philly Cheese Steak Pizza$/) do
-    find(:xpath, '//*[@id="categoryPage2"]/section[2]/div/div[3]/a').click
+    find(:css, '#categoryPage2 > section:nth-child(2) > div > div:nth-child(3) > a').click
 end
 
 Then(/^I click No, Add To Order Now$/) do
